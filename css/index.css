@@ -1,4 +1,4 @@
 body {
-    background-color: black;
-    color: white;
+    background-image: url("static/bg1.jpg");
+    background-size: cover;
 }
