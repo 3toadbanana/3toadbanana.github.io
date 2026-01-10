@@ -4,8 +4,9 @@ body {
 }
 
 #main-container {
-    width: 50vw;
-    display: flex;
+    width: 60vw;
+    height: 50vh;
+
 }
 
 #page-title {
