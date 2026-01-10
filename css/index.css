@@ -5,4 +5,9 @@ body {
 
 #main-container {
     width: 50vw;
+    display: flex;
+}
+
+#page-title {
+    color: white;
 }
