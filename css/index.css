@@ -3,6 +3,10 @@ body {
     background-size: cover;
 }
 
+#parent-container {
+    display: flex;
+}
+
 #main-container {
     width: 60vw;
     height: 50vh;
