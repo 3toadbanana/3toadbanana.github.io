@@ -53,8 +53,13 @@
                 </div>
             </div>
         </div>
+        <footer>
+            &copy; <span id="year"></span> Your Name. All rights reserved.
+        </footer>
 
-
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
 </body>
 
 </html>

@@ -7,8 +7,15 @@
     <title>404 not found</title>
 </head>
 
-<body>
+<body style="background-color: #000082;">
     <p>An error has occurred. To continue, press alt+f4 </p>
+    <footer>
+        &copy; <span id="year"></span> adit garg. all rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
