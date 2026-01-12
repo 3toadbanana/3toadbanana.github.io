@@ -20,9 +20,16 @@
     /* Best practice to show text immediately while loading */
 }
 
+html {
+    font-size: 1.5rem;
+}
+
 body {
     background-image: url("../static/bg2.gif");
     background-size: cover;
+    transform: scale(1.5);
+    transform-origin: top left;
+    width: calc(100% / 1.5);
 }
 
 #page-title {
@@ -40,8 +47,9 @@ body {
     flex-direction: row
 }
 
-#taskbar {
-    bottom: 0;
+#navbar {
+    height: max-content;
+
 }
 
 nav {
