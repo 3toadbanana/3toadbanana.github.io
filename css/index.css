@@ -25,7 +25,6 @@ html {
 }
 
 body {
-    background-image: url("../static/bg2.gif");
     background-size: cover;
     transform: scale(1.5);
     transform-origin: top left;
@@ -49,7 +48,6 @@ body {
 
 #navbar {
     height: max-content;
-
 }
 
 nav {

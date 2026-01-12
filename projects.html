@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="container" id="parent-container" style="">
+    <div class="container" id="parent-container">
         <div id="page-title">
             <span style="color: white;">
                 <h2>adit's projects</h2>
@@ -25,12 +25,17 @@
         <div id="page-content">
             <div id="navbar" class="window col-2">
                 <nav>
-                    <button onclick="location.href='/'" type="button">home</button>
-                    <button onclick="location.href='https://github.com/3toadbanana'" type="button">github</button>
-                    <button disabled onclick="location.href='/projects'" type="button">projects</button>
-                    <button onclick="location.href='https://www.linkedin.com/in/aditgarg15'"
-                        type="button">linkedin</button>
-                    <button onclick="location.href='/projects'" type="button">other cool stuff</button>
+                    <nav>
+                        <button onclick="location.href='/'" target="_blank" type="button">home</button>
+                        <button onclick="window.open('https://github.com/3toadbanana', '_blank', 'noopener')"
+                            target="_blank" type="button">github</button>
+                        <button disable onclick="location.href='/projects'" type="button">projects</button>
+                        <button onclick="window.open('https://www.linkedin.com/in/aditgarg15', '_blank', 'noopener')"
+                            type="button">linkedin</button>
+                        <button onclick="window.open('static/resume.pdf', '_blank', 'noopener')" type="button">current
+                            resume</button>
+                        <button onclick="location.href='/projects'" type="button">other cool stuff</button>
+                    </nav>
                 </nav>
             </div>
             <div class="col-1"></div>
