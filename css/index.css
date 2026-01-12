@@ -40,6 +40,10 @@ body {
     flex-direction: row
 }
 
+#taskbar {
+    bottom: 0;
+}
+
 nav {
     display: flex;
     flex-direction: column;
