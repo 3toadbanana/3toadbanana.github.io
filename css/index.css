@@ -1,7 +1,7 @@
 @font-face {
     font-family: "myWindows98Font";
-    src: url('w98-font/Web-TT/MSW98UI-Regular.woff2') format('woff2'),
-        url('w98-font/Web-TT/MSW98UI-Regular.woff') format('woff');
+    src: url('../w98-font/Web-TT/MSW98UI-Regular.woff2') format('woff2'),
+        url('../w98-font/Web-TT/MSW98UI-Regular.woff') format('woff');
     /* Fallback for older browsers */
     font-weight: normal;
     font-style: normal;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: "myWindows98Font";
-    src: url('w98-font/Web-TT/MSW98UI-Bold.woff2') format('woff2'),
-        url('w98-font/Web-TT/MSW98UI-Bold.woff') format('woff');
+    src: url('../w98-font/Web-TT/MSW98UI-Bold.woff2') format('woff2'),
+        url('../w98-font/Web-TT/MSW98UI-Bold.woff') format('woff');
     /* Fallback for older browsers */
     font-weight: bold;
     font-style: normal;
@@ -32,7 +32,7 @@ body {
 }
 
 #page-title {
-    font-family: 'myWindows98Font';
+    font-family: "myWindows98Font";
     color: white;
 }
 
