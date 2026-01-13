@@ -29,6 +29,7 @@ body {
     transform: scale(1.5);
     transform-origin: top left;
     width: calc(100% / 1.5);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #page-title {
@@ -38,16 +39,34 @@ body {
 
 #parent-container {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 #page-content {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    flex: 1;
+}
+
+#bio-container {
+    height: max-content;
 }
 
 #navbar {
     height: max-content;
+}
+
+#copyright {
+    color: white;
+    align-self: flex-end;
+}
+
+#clippy1 {
+    width: 100%;
+}
+
+#clippy2 {
+    width: 100%;
 }
 
 nav {
