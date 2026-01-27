@@ -62,6 +62,11 @@ body {
     height: max-content;
 }
 
+#deliverables {
+    display: flex;
+    flex-direction: column;
+}
+
 #copyright {
     color: white;
     align-self: flex-end;
