@@ -82,7 +82,7 @@ body {
 }
 
 #img-dlxm {
-    width: 10%;
+    object-fit: cover;
 }
 
 #reveal-menu:hover #deliverable-menu {
