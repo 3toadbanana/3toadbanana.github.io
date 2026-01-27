@@ -20,6 +20,12 @@
     /* Best practice to show text immediately while loading */
 }
 
+@media only screen and (min-width: 768px) {
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+}
+
 html {
     font-size: 1.5rem;
 }
@@ -70,19 +76,15 @@ body {
     width: 100%;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-}
-
-.reveal-menu:hover .deliverable-menu {
+#reveal-menu:hover #deliverable-menu {
     display: block;
 }
 
-.reveal-menu:hover {
+#deliverable-menu {
     display: none;
 }
 
-.deliverable-menu {
-    display: none;
+nav {
+    display: flex;
+    flex-direction: column;
 }
