@@ -81,7 +81,7 @@ body {
     width: 100%;
 }
 
-#img-dlxm {
+.img-dlxm {
     width: 200px;
     object-fit: contain;
 }
