@@ -73,11 +73,15 @@ body {
     font-family: "myWindows98font";
 }
 
-#clippy1 {
+#img-clippy1 {
     width: 100%;
 }
 
-#clippy2 {
+#img-clippy2 {
+    width: 100%;
+}
+
+#img-dlxm {
     width: 100%;
 }
 
