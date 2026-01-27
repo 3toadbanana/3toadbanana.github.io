@@ -82,6 +82,7 @@ body {
 }
 
 #img-dlxm {
+    width: 200px;
     object-fit: contain;
 }
 
