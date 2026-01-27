@@ -79,6 +79,10 @@ nav {
     display: block;
 }
 
+.reveal-menu:hover {
+    display: none;
+}
+
 .deliverable-menu {
     display: none;
 }
