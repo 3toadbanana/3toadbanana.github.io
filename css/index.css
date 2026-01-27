@@ -74,3 +74,11 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
+.reveal-menu:hover .deliverable-menu {
+    display: block;
+}
+
+.deliverable-menu {
+    display: none;
+}
