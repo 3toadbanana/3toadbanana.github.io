@@ -83,6 +83,10 @@ body {
 
 .img-dlxm {}
 
+.window {
+    height: max-content;
+}
+
 #reveal-menu:hover #deliverable-menu {
     display: block;
 }
