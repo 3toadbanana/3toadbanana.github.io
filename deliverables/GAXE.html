@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI X Epistemology</title>
+    <link rel="icon" type="image/png" href="/static/cd.png">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const rnd = Math.floor(Math.random() * 10) + 1;
+            document.body.style.backgroundImage = `url(../backgrounds/${rnd}.gif)`;
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container" id="parent-container">
+        <div id="page-title">
+            <span style="color: white;">
+                <h2>gen ai X epistemology</h2>
+            </span>
+        </div>
+        <div id="page-content">
+            <div id="navbar" class="window col-2">
+                <nav>
+                    <button aria-disabled="true" onclick="location.href='/'" target="_blank" type="button">home</button>
+                    <button onclick="window.open('https://github.com/3toadbanana', '_blank', 'noopener')"
+                        target="_blank" type="button">github
+                    </button>
+                    <button onclick="location.href='/projects'" type="button">projects</button>
+                    <button id="reveal-menu" onclick="location.href='/CS302'" type="button">CS302</button>
+                    <button onclick="window.open('https://www.linkedin.com/in/aditgarg15', '_blank', 'noopener')"
+                        type="button">linkedin</button>
+                    <button onclick="window.open('static/resume.pdf', '_blank', 'noopener')" type="button">current
+                        resume</button>
+                    <button onclick="location.href='/projects'" type="button">other cool stuff</button>
+                </nav>
+                <div>
+                    <img src="../static/clippy1.gif" id="img-clippy1"
+                        alt="a GIF of Clippy, Microsoft Office's animated paperclip personal assistant.">
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="window col-6">
+                <div class="title-bar">
+                    <div class="title-bar-text">What <i>is</i> a computer?</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <p>I LOVE OUTSOURCING MY THINKING TO A MACHINE!</p>
+                </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="window col-2">
+                <div class="title-bar">
+                    <div class="title-bar-text">Deliverables</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div id="deliverables">
+                    <button onclick="location.href='/deliverables/DLXM'" type="button">
+                        digital logic X metaphysics
+                    </button>
+                    <button onclick="location.href='/deliverables/GAXE'" type="button">
+                        gen ai X epistemology
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
