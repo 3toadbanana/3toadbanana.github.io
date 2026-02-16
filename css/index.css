@@ -81,7 +81,10 @@ body {
     width: 100%;
 }
 
-.img-dlxm {}
+.hanging-indent {
+    padding-left: 30px;
+    text-indent: -30px;
+}
 
 .window {
     height: max-content;
