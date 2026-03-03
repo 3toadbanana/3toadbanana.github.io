@@ -73,6 +73,7 @@
                         Keeping with the theme of vague meme image, I made my bot post an outdated meme. </p>
                     <img style="width: 100%;" src="../static/smxe/imgpost.png"
                         alt="outdated canned beans meme captioned 'cracking open a cold one with the boys'">
+                    <p></p>
                     <p>Finally, the most exciting and bot-like functionality that my bot has is the reply function. When
                         my bot is mentioned (@'ed) in a post or reply, it will reply to that with information on Elon
                         Musk's wealth, specifically, how far he is from a net worth of $1 trillion. The bot uses the
@@ -87,21 +88,29 @@
                         convenient, syntax-sugared functions. Once the bot is declared an instance of the Client class
                         and is logged in, the code for making a post is as simple as saying</p>
                     <br>
-                    <p>def make_text_post(text):
-                        client.send_post(text)</p>
+                    <pre>
+                        <code>
+                            def make_text_post(text):
+                                client.send_post(text)
+                        </code>
+                    </pre>
                     <br>
-                    <p>def make_img_post(img, caption, alt_text):
-                        with open(img, 'rb') as f:
-                        img_data = f.read()
-
-                        aspect_ratio = models.AppBskyEmbedDefs.AspectRatio(height=100, width=100)
-
-                        client.send_image(
-                        text=caption,
-                        image=img_data,
-                        image_alt=alt_text,
-                        image_aspect_ratio=aspect_ratio
-                        )</p>
+                    <pre>
+                        <code>
+                            def make_img_post(img, caption, alt_text):
+                                with open(img, 'rb') as f:
+                                    img_data = f.read()
+                            
+                                aspect_ratio = models.AppBskyEmbedDefs.AspectRatio(height=100, width=100)
+                            
+                                client.send_image(
+                                    text=caption,
+                                    image=img_data,
+                                    image_alt=alt_text,
+                                    image_aspect_ratio=aspect_ratio
+                                )
+                        </code>
+                    </pre>
                 </div>
             </div>
             <div class="col-1"></div>
