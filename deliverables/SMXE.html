@@ -51,7 +51,7 @@
             <div class="col-1"></div>
             <div class="window col-6">
                 <div class="title-bar">
-                    <div class="title-bar-text">Who <i>should</i>be on social media?</div>
+                    <div class="title-bar-text">Who <i>should</i> be on social media?</div>
                     <div class="title-bar-controls">
                         <button aria-label="Minimize"></button>
                         <button aria-label="Maximize"></button>
@@ -64,16 +64,14 @@
                         allows publishing and distribution of data on social media platforms. </p>
                     <p>The bot I wrote can be found <a href="https://bsky.app/profile/cs302-adit-project.bsky.social"
                             target="_blank" rel="noopener">here</a>. At the most basic
-                        level (literally 3 lines of python), the bot can make a text post. My favourite kinds of posts
+                        level (literally 2 lines of python), the bot can make a text post. My favourite kinds of posts
                         online are vague, meme-y posts, and so I tried emulating that for my test text posts. </p>
                     <img style="width: 100%;" src="../static/smxe/textpost.png"
                         alt="text posts made by my atproto bot.">
-                    <p></p>
                     <p>The second level of functionality (still just a few lines of code) allows the bot to post images.
                         Keeping with the theme of vague meme image, I made my bot post an outdated meme. </p>
                     <img style="width: 100%;" src="../static/smxe/imgpost.png"
                         alt="outdated canned beans meme captioned 'cracking open a cold one with the boys'">
-                    <p></p>
                     <p>Finally, the most exciting and bot-like functionality that my bot has is the reply function. When
                         my bot is mentioned (@'ed) in a post or reply, it will reply to that with information on Elon
                         Musk's wealth, specifically, how far he is from a net worth of $1 trillion. The bot uses the
@@ -83,34 +81,61 @@
                     </p>
                     <img style="width: 100%;" src="../static/smxe/botreply.png"
                         alt="picture of the bot's reply containing information on Elon Musk's net worth.">
-                    <p></p>
                     <p>For the basic text and image functionalities of the bot, atproto's python library provides very
                         convenient, syntax-sugared functions. Once the bot is declared an instance of the Client class
                         and is logged in, the code for making a post is as simple as saying</p>
-                    <br>
                     <pre>
-                        <code>
-                            def make_text_post(text):
-                                client.send_post(text)
-                        </code>
-                    </pre>
+    <code>
+        def make_text_post(text):
+            client.send_post(text)
+    </code>
+</pre>
                     <br>
+                    <p>Similarly, the code for making an image post is also very simple:</p>
                     <pre>
-                        <code>
-                            def make_img_post(img, caption, alt_text):
-                                with open(img, 'rb') as f:
-                                    img_data = f.read()
-                            
-                                aspect_ratio = models.AppBskyEmbedDefs.AspectRatio(height=100, width=100)
-                            
-                                client.send_image(
-                                    text=caption,
-                                    image=img_data,
-                                    image_alt=alt_text,
-                                    image_aspect_ratio=aspect_ratio
-                                )
-                        </code>
-                    </pre>
+<code>
+    def make_img_post(img, caption, alt_text):
+        with open(img, 'rb') as f:
+            img_data = f.read()
+    
+        aspect_ratio = models.AppBskyEmbedDefs.AspectRatio(height=100, width=100)
+    
+        client.send_image(
+            text=caption,
+            image=img_data,
+            image_alt=alt_text,
+            image_aspect_ratio=aspect_ratio
+        )
+</code>
+</pre>
+                    <br>
+                    <p>Social media sometimes feels like a black hole. It claims (and I think sometimes achieves) to
+                        have a wide variety of applications for human-related uses, such as staying connected or raising
+                        awareness or sharing art or crowdfunding. However, recently, it feels more like a black hole,
+                        where the platform's goal is not to provide a good, fulfilling user experience, but rather to
+                        optimise for watch times and ad revenue.
+                    </p>
+                    <p>It also feels like a difficult area of human life to govern. On one hand, there are ideas of
+                        freedom of speech and lack of censorship; the idea that the internet should be completely free
+                        and there should be no sort of censhorship. On the other hand, the anonymity granted by the
+                        internet allows people to voice a lot of harmful opinions that they otherwise maybe would not
+                        express. Finding the balance and the correct ethic here is very difficult.
+                    </p>
+                    <p>Particularly, this comes up in the case of bots. 3 of our top 5 class questions dealt with bots,
+                        their governance and their existence. Specifically, a question that still lives in my mind is
+                        the one asking whether it is okay for a bot to harm some people if it makes more people happy?
+                    </p>
+                    <p>
+                        I think the reason this question intrigues me is because societally, we have already answered
+                        it. Societally, we have already accepted bots that harm some people if it makes other people
+                        happy. This is seen in ad bots and scam bots that aim to profit off other users, usually real
+                        people. Societally, we have accepted this as a real possibility that people face on social
+                        media: it's an occupational hazard.
+                    </p>
+                    <p>I also think the more nuanced view on this is to realise why this is true. I think the reason is
+                        because bots allow companies to 'farm' on social media, be it engagement or click-rate or ad
+                        revenue. The corporate gamification of social media through bots is what makes it impossible for
+                        society to say no: the stakeholders are too happy about the bots. </p>
                 </div>
             </div>
             <div class="col-1"></div>
